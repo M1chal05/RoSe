@@ -1,0 +1,14 @@
+main h2{
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+//MEDIA
+
+@media only screen and (min-width: 1000px){
+    main h2{
+        max-width: 50%;
+        margin: 0 3em;
+        font-size: 1.5rem;
+    }
+}

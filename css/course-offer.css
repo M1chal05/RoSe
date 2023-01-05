@@ -1,0 +1,99 @@
+body {
+  overflow-x: hidden;
+}
+
+main h2 {
+  max-width: 85%;
+  margin: 0 auto 3em auto;
+}
+main .lang-card {
+  margin: 1em auto;
+  max-width: 85%;
+  height: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2em;
+}
+main .lang-card h3 {
+  font-size: 1.5rem;
+}
+main .german {
+  background: #E4D200;
+}
+main .english {
+  background: #B59AB7;
+}
+main .czech {
+  background: #2196CF;
+}
+main .russian {
+  background: #93CFC2;
+}
+main .vietnameese {
+  background: #39B080;
+}
+main .chineese {
+  background: #E15A2F;
+}
+main .prepared-container .prepared {
+  background: #D9D9D9;
+  border-radius: 2em;
+}
+
+@media only screen and (min-width: 1000px) {
+  main h2 br {
+    display: none;
+  }
+  main .container {
+    min-width: 100vw;
+    scroll-snap-align: start;
+    max-height: 90vh;
+  }
+  main::-webkit-scrollbar {
+    display: none;
+  }
+  main {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  main .lang-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    max-width: 88%;
+  }
+  main .lang-container .lang-card {
+    min-width: 90%;
+    min-height: 15em;
+    margin: 1em auto;
+  }
+  main .prepared-container .prepared {
+    min-width: 90%;
+    min-height: 15em;
+    border-radius: 2em;
+    margin: 1em auto;
+  }
+  main .container .right-arrow {
+    height: 2em;
+    display: block;
+    margin: 1em;
+    cursor: pointer;
+    position: relative;
+    left: 94%;
+    top: -43%;
+  }
+  main .container .left-arrow {
+    height: 2em;
+    display: block;
+    margin: 1em;
+    cursor: pointer;
+    position: relative;
+    top: 52.5%;
+    transform: rotate(180deg);
+    left: 0;
+  }
+  main .prepared-heading {
+    margin: 3em auto 1em auto;
+  }
+}/*# sourceMappingURL=course-offer.css.map */

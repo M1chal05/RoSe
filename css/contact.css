@@ -1,0 +1,135 @@
+body {
+  overflow-x: hidden;
+}
+
+main h2 {
+  max-width: 85%;
+  margin: 0 auto 2em auto;
+  font-size: 1.75rem;
+}
+main .slider {
+  display: flex;
+  overflow-x: scroll;
+}
+main .slider .slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+main .slider .slide img {
+  margin-bottom: 1.5em;
+  border-radius: 2em;
+}
+main .slider {
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 3em auto;
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+main .slider::-webkit-scrollbar {
+  display: none;
+}
+main .slider {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+main .slider .slide {
+  display: flex;
+  justify-content: center;
+  min-width: 100vw;
+  scroll-snap-align: start;
+}
+main .social-sites {
+  margin: 3em auto;
+  max-width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+main .social-sites img {
+  width: 2em;
+}
+main .contact-info {
+  max-width: 85%;
+  margin: 0 auto;
+  padding-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+main .contact-info p {
+  font-family: "Stabil";
+}
+
+.dot-container {
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0em auto;
+  padding-bottom: 1em;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  margin: 0 0.25em;
+}
+
+.active-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  margin: 0 0.25em;
+}
+
+@media only screen and (min-width: 1000px) {
+  main .container {
+    max-width: 40%;
+  }
+  main .container h2 {
+    margin: 1em auto;
+  }
+  main .slider {
+    width: 50%;
+    position: absolute;
+    top: 5%;
+    right: 4em;
+    scroll-behavior: smooth;
+    gap: 2em;
+  }
+  main .slider .slide {
+    min-width: 100%;
+  }
+  main .slider .slide img {
+    width: auto;
+    height: 40em;
+  }
+  main .dot-container {
+    display: none;
+  }
+  main .social-sites {
+    justify-content: flex-start;
+    margin: 1em 2%;
+  }
+  main .social-sites a {
+    margin: 0 1em;
+  }
+  main .contact-info {
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 0 3%;
+  }
+  main .contact-info p {
+    width: 20%;
+  }
+  main .mob {
+    display: none;
+  }
+}/*# sourceMappingURL=contact.css.map */

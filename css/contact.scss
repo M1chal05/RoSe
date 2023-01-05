@@ -1,0 +1,158 @@
+body{
+    overflow-x: hidden;
+}
+
+main{
+
+    p{
+        color: black;
+    }
+
+    h2{
+        max-width: 85%;
+        margin: 0 auto 2em auto;
+        font-size: 1.75rem;
+        color: black;
+    }
+
+    .slider{
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    .slider .slide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .slider .slide img{
+        margin-bottom: 1.5em;
+        border-radius: 2em;
+    }
+
+    .slider{
+        display: flex;
+        height: fit-content;
+        margin: 3em auto;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+    }
+
+    .slider::-webkit-scrollbar{
+        display: none;
+    }
+
+    .slider{
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
+
+    .slider .slide{
+        display: flex;
+        justify-content: center;
+        min-width: 100vw;
+        scroll-snap-align: start;
+    }
+
+    .social-sites{
+        margin: 3em auto;
+        max-width: 60%;
+        display: flex;
+        justify-content: space-between;
+
+        img{
+            width: 2em;
+        }
+    }
+
+    .contact-info{
+        max-width: 85%;
+        margin: 0 auto;
+        padding-bottom: 1em;
+        display: flex;
+        justify-content: space-between;
+
+        p{
+            font-family: 'Stabil';
+        }
+    }
+}
+
+
+
+.dot-container{
+    display: flex;
+    width: fit-content;
+    margin: 0em auto;
+    padding-bottom: 1em;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 0 0.25em;
+}
+
+.active-dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 0 0.25em;
+}
+
+
+
+
+
+
+//MEDIA
+
+@media only screen and (min-width: 1000px){
+    main .container{
+        max-width: 40%;
+    }
+    main .container h2{
+        margin: 1em auto;
+    }
+    main .slider{
+        width: 50%;
+        position: absolute;
+        top: 5%;
+        right: 4em;
+        scroll-behavior: smooth;
+        gap: 2em;
+    }
+    main .slider .slide{
+        min-width: 100%;
+    }
+    main .slider .slide img{
+        width: auto;
+        height: 40em;
+    }
+    main .dot-container{
+        display: none;
+    }
+    main .social-sites{
+        justify-content: flex-start;
+        margin: 1em 2%;
+    }
+    main .social-sites a{
+        margin: 0 1em;
+    }
+    main .contact-info{
+        justify-content: flex-start;
+        flex-direction: column;
+        margin: 0 3%;
+    }
+    main .contact-info p{
+        width: 20%;
+    }
+    main .mob{
+        display: none;
+    }
+}

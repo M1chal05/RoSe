@@ -1,0 +1,99 @@
+main h2 {
+  max-width: 85%;
+  margin: auto;
+}
+main h2 a {
+  text-decoration: none;
+  color: black;
+}
+main .slider {
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 3em auto;
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+main .slider::-webkit-scrollbar {
+  display: none;
+}
+main .slider {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+main .slider .slide {
+  display: flex;
+  justify-content: center;
+  min-width: 100vw;
+  scroll-snap-align: start;
+}
+main .slider .slide .price-card {
+  width: 85%;
+  height: 30em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2em;
+}
+main .slider .slide .price-card h3 {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 1em;
+}
+main .slider .slide .price-card p {
+  font-family: "Stabil";
+  font-size: 1.1rem;
+}
+main .dot-container {
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1em auto;
+  padding-bottom: 1em;
+}
+main .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  margin: 0 0.25em;
+}
+main .active-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  margin: 0 0.25em;
+}
+main .individual {
+  background: #E4D200;
+}
+main .twice {
+  background: #B59AB7;
+}
+main .group {
+  background: #93CFC2;
+}
+
+@media only screen and (min-width: 1000px) {
+  main h2 {
+    font-size: 2vw;
+  }
+  main h2 a br {
+    display: none;
+  }
+  main .slider {
+    max-width: 90%;
+  }
+  main .slider .slide {
+    min-width: auto;
+    width: 33%;
+  }
+  main .dot-container {
+    display: none;
+  }
+}/*# sourceMappingURL=pricelist.css.map */

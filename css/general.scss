@@ -1,0 +1,21 @@
+//FONTY
+@font-face {
+    font-family: 'Labil';
+    src: url('/fonts/LabilGrotesk-Bold.otf') format(opentype);
+}
+@font-face {
+    font-family: 'Stabil';
+    src: url('/fonts/StabilGrotesk-Regular.otf') format(opentype);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Labil', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}

@@ -1,0 +1,25 @@
+main h2 {
+  margin: 1.25em;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  margin: 1em auto;
+  width: 100%;
+}
+footer h1 {
+  font-family: "Labil", sans-serif;
+  font-feature-settings: "ss02";
+  font-size: 17vw;
+}
+
+@media only screen and (min-width: 1000px) {
+  main h2 {
+    max-width: 22em;
+    font-size: 2.5rem;
+    margin-top: 0;
+  }
+}/*# sourceMappingURL=style.css.map */

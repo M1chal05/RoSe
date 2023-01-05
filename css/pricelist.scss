@@ -1,0 +1,118 @@
+main{
+    h2{
+        max-width: 85%;
+        margin: auto;
+    }
+
+    h2 a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .slider{
+        display: flex;
+        height: fit-content;
+        margin: 3em auto;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+    }
+
+    .slider::-webkit-scrollbar{
+        display: none;
+    }
+
+    .slider{
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
+
+    .slider .slide{
+        display: flex;
+        justify-content: center;
+        min-width: 100vw;
+        scroll-snap-align: start;
+    }
+
+    .slider .slide .price-card{
+        width: 85%;
+        height: 30em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2em;
+
+        h3{
+            text-align: center;
+            font-size: 1.75rem;
+            margin-bottom: 1em;
+        }
+
+        p{
+            font-family: 'Stabil';
+            font-size: 1.1rem;
+            
+        }
+    }
+
+    .dot-container{
+        display: flex;
+        width: fit-content;
+        margin: 1em auto;
+        padding-bottom: 1em;
+    }
+
+    .dot{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: gray;
+        margin: 0 0.25em;
+    }
+
+    .active-dot{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: black;
+        margin: 0 0.25em;
+    }
+
+    
+
+    .individual{
+        background: #E4D200;
+    }
+
+    .twice{
+        background: #B59AB7;
+    }
+
+    .group{
+        background: #93CFC2;
+    }
+}
+
+
+//MEDIA
+
+@media only screen and (min-width: 1000px){
+
+    main h2{
+        font-size: 2vw;
+    }
+    main h2 a br{
+        display: none;
+    }
+    main .slider{
+        max-width: 90%;
+    }
+    main .slider .slide{
+        min-width: auto;
+        width: 33%;
+    }
+
+    main .dot-container{
+        display: none;
+    }
+}

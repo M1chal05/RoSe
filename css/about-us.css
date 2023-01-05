@@ -1,0 +1,161 @@
+body {
+  max-width: 100%;
+}
+
+main {
+  max-width: 100%;
+  margin: auto;
+  position: relative;
+}
+main h2 {
+  text-align: left;
+  max-width: 85%;
+  margin: 0 auto 5em auto;
+}
+main .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  margin: 0 0.25em;
+}
+main .active-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  margin: 0 0.25em;
+}
+main .dot-container {
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1em auto;
+  padding-bottom: 1em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 11em;
+}
+main .slider {
+  display: flex;
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+main .slider .left-arrow {
+  display: none;
+}
+main .slider .right-arrow {
+  display: none;
+}
+main .slider::-webkit-scrollbar {
+  display: none;
+}
+main .slider {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+main .slider .slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100vw;
+  scroll-snap-align: start;
+}
+main .slider .pc-slide {
+  display: flex;
+}
+main .slider .slide a img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 2em;
+  cursor: pointer;
+}
+main .slider .slide h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2em 0;
+}
+main .slider .slide .job-offer {
+  background: #93CFC2;
+  border-radius: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0px;
+}
+main .slider .slide .job-offer h3 {
+  max-width: 10em;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+main .slider .slide .job-offer a {
+  color: black;
+  text-decoration: none;
+  width: 60%;
+  background: #FFFFFF;
+  text-align: center;
+  padding: 0.75em 1em;
+  border-radius: 10em;
+  font-size: 1.25rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  main h2 {
+    margin-bottom: 1em;
+    max-width: 90%;
+  }
+  main h2 br {
+    display: none;
+  }
+  main .dot-container {
+    display: none;
+  }
+  main .slider .slide {
+    min-width: 31%;
+    max-width: 31%;
+    width: auto;
+    margin: 0 1em;
+  }
+  main .slider {
+    max-width: 90%;
+    margin: 0 auto;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    height: 100%;
+  }
+  main .slider .slide a img {
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  main .slider .pc-slide .right-arrow {
+    height: 2em;
+    display: block;
+    margin: 1em;
+    cursor: pointer;
+    position: absolute;
+    right: 0em;
+    top: 40%;
+  }
+  main .slider .pc-slide .left-arrow {
+    height: 2em;
+    display: block;
+    margin: 1em;
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    transform: rotate(180deg);
+    left: 0;
+  }
+  main .slider .pc-slide {
+    min-width: 100%;
+    margin: 0 1em;
+    height: 100%;
+  }
+  main .slider .slide .job-offer {
+    background: #93CFC2;
+  }
+}/*# sourceMappingURL=about-us.css.map */

@@ -1,0 +1,26 @@
+main {
+  max-width: 85%;
+  margin: 0 auto;
+}
+main h2 {
+  font-size: 2vw;
+  margin: 0.5em 0 1em 0;
+}
+main .payment-container {
+  margin-bottom: 3em;
+}
+main h3 {
+  font-size: 1.4vw;
+  margin-bottom: 0.5em;
+}
+main p {
+  font-family: "Stabil";
+  font-size: 1.3vw;
+}
+
+@media only screen and (min-width: 1000px) {
+  main {
+    max-width: 40%;
+    margin-left: 5%;
+  }
+}/*# sourceMappingURL=payment.css.map */

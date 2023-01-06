@@ -3,19 +3,19 @@ main {
   margin: 0 auto;
 }
 main h2 {
-  font-size: 2vw;
+  font-size: 2rem;
   margin: 0.5em 0 1em 0;
 }
 main .payment-container {
   margin-bottom: 3em;
 }
 main h3 {
-  font-size: 1.4vw;
+  font-size: 1.4rem;
   margin-bottom: 0.5em;
 }
 main p {
   font-family: "Stabil";
-  font-size: 1.3vw;
+  font-size: 1rem;
 }
 
 @media only screen and (min-width: 1000px) {

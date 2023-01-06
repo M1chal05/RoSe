@@ -7,33 +7,50 @@ let maxScrollLeft = slider.scrollWidth - slider.clientWidth
 
 //test zacatek
 
-let WindWidth = window.innerWidth
+// let windowWidth = window.innerWidth
 
-if(WindWidth <= 1000){
-    console.log("ahoj")
-}
+// WidthCheck()
 
-else{
-    window.onresize = ScrlChange
+// function WidthCheck(){
+//     if(windowWidth > 1000){
+//         setTimeout(swipe, slideTime)
+//     }
+// }
 
-function ScrlChange(){
-    maxScrollLeft = slider.scrollWidth - slider.clientWidth
-}
+// window.addEventListener("resize", function(){
+//     windowWidth = window.innerWidth
 
-function swipe(){
-    slider.scrollLeft += slide.clientWidth
+//     if(windowWidth < 1000){
+//         clearTimeout(swipe)
+//     }
     
-    setTimeout(swipe, slideTime)
-
-    if(slider.scrollLeft == maxScrollLeft){
-        slider.scrollLeft = 0
-    }
-}
+// })
 
 
 
-setTimeout(swipe, slideTime)
-}
+
+
+
+// window.onresize = ScrlChange
+
+//     function ScrlChange(){
+//         maxScrollLeft = slider.scrollWidth - slider.clientWidth
+//     }
+
+//     function swipe(){
+//         slider.scrollLeft += slide.clientWidth
+        
+//         setTimeout(swipe, slideTime)
+
+//         if(slider.scrollLeft == maxScrollLeft){
+//             slider.scrollLeft = 0
+//         }
+//     }
+
+
+
+    
+
 
 
 //test konec

@@ -2,10 +2,14 @@ body {
   overflow-x: hidden;
 }
 
+main p {
+  color: black;
+}
 main h2 {
   max-width: 85%;
   margin: 0 auto 2em auto;
   font-size: 1.75rem;
+  color: black;
 }
 main .slider {
   display: flex;

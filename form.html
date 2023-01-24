@@ -6,35 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rozmluv se - přihláška</title>
 
-
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/form.css">
 </head>
 <body>
 
-    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSermMY2wR5-jd-uROM7FCiAQCaDn6QmR1kogzIUIJ3_kBHsFA/formResponse" method="post">
+    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScWKruWd3_5cYgmnzPjbuM81gNsN4Ta9BAAx9Qq9h4qLCOdMg/formResponse" method="post">
 
-        <input type="text" name="entry.1676543641" placeholder="Tvoje jméno a příjmení">
+        <input type="text" name="entry.1542329120" placeholder="Tvoje jméno a příjmení" required class="content">
 
-        <input type="text" name="entry.2040458126" placeholder="Tvoje tel. číslo">
+        <input type="email" name="entry.1289349062" placeholder="Tvůj email" required class="content">
 
-        <input type="text" name="entry.1669381093" placeholder="Tvůj email">
+        <input type="tel" name="entry.1138052529" placeholder="Tvoje tel. číslo" required class="content">
 
-        <select name="entry.1604168804" id="jazyky">
+        <select name="entry.349025126" id="jazyky" required class="content">
             <option value="Vyberte" selected disabled>Vyberte</option>
-            <option value="Option 1">Angličtina</option>
-            <option value="Option 2">Němčina</option>
+            <option value="Angličtina">Angličtina</option>
+            <option value="Němčina">Němčina</option>
             <option value="Čeština">Čeština</option>
             <option value="Ruština">Ruština</option>
             <option value="Vietnamština">Vietnamština</option>
-            <option value="Option 6">Čínština</option>
+            <option value="Čínština">Čínština</option>
         </select>
 
-        <select name="entry.1475721686" id="kurzy">
+        <select name="entry.955366772" id="kurzy" required class="content">
+            <option value="Vyberte" selected disabled>Vyberte</option>
             <option value="Jednotlivec">Jednotlivec</option>
             <option value="Dvojice">Dvojice</option>
             <option value="Skupina">Skupina</option>
         </select>
 
-        <button type="submit">Odeslat přihlášku</button>
+        <button type="submit" class="content">Odeslat přihlášku</button>
 
     </form>
     

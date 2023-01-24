@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Labil";
-  src: url("/fonts/LabilGrotesk-Bold.otf") format(opentype);
+  src: url("https://m1chal05.github.io/RoSe/fonts/LabilGrotesk-Bold.otf") format(opentype);
 }
 @font-face {
   font-family: "Stabil";
-  src: url("/fonts/StabilGrotesk-Regular.otf") format(opentype);
+  src: url("https://m1chal05.github.io/RoSe/fonts/StabilGrotesk-Regular.otf") format(opentype);
 }
 * {
   margin: 0;

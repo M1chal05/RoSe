@@ -1,0 +1,49 @@
+//VARIALBES
+$h2-pc: 40px;
+$text-pc: 20px;
+$a-small-pc: 20px;
+
+$h2-mobile: 26px;
+$text-mobile: 15px;
+$a-small-mobile: 20px;
+
+
+
+body{
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.content{
+    width: 60%;
+    margin: 1em;
+    font-size: $a-small-mobile;
+    padding: 0.5em;
+    border-radius: 2em;
+    outline: none;
+    border: 1px solid black;
+}
+
+select{
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1000px){
+    .content{
+        font-size: $a-small-pc;
+    }
+}

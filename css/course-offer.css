@@ -9,6 +9,7 @@ main h2 {
 }
 main .lang-container {
   width: 93%;
+  margin: 0 auto;
 }
 main .lang-container a {
   color: black;

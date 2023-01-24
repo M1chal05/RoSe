@@ -38,7 +38,7 @@ main .dot-container {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 8.5em;
+  bottom: 6em;
 }
 main .slider {
   display: flex;
@@ -74,6 +74,7 @@ main .slider .slide a img {
   max-height: 100%;
   border-radius: 2em;
   cursor: pointer;
+  margin: 1em;
 }
 main .slider .slide h3 {
   text-align: center;

@@ -1,3 +1,12 @@
+//VARIALBES
+$h2-pc: 40px;
+$text-pc: 20px;
+$a-small-pc: 20px;
+
+$h2-mobile: 26px;
+$text-mobile: 15px;
+$a-small-mobile: 20px;
+
 body{
     background: #93CFC2;
     width: 100vw;
@@ -13,34 +22,36 @@ body{
 
 .container{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    max-width: 85%;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
     height: 100%;
-    padding-bottom: 2em;
-    margin: auto;
+    padding: 2em;
 
 
     img{
         border-radius: 2em;
-        width: 25em;
+        width: 100%;
+        height: auto;
     }
 
     .text-container{
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     h3{
-        font-size: 1.5rem;
+        font-size: $h2-mobile;
         margin: 0.5em 0;
     }
 
     p{
         font-family: 'Stabil';
         text-align: center;
+        font-size: $text-mobile;
     }
 }
 
@@ -52,5 +63,17 @@ body{
     .container{
         flex-direction: row;
         gap: 10em;
+        padding: 5em;
+    }
+    .container img{
+        height: 110%;
+        width: auto;
+    }
+    .container h3{
+        font-size: $h2-pc;
+    }
+    .container p{
+        font-size: $text-pc;
+        max-width: 30ch;
     }
 }

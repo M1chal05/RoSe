@@ -1,9 +1,18 @@
+//VARIALBES
+$h2-pc: 40px;
+$text-pc: 20px;
+$a-small-pc: 20px;
+
+$h2-mobile: 26px;
+$text-mobile: 15px;
+$a-small-mobile: 20px;
+
 main{
 
     max-width: 85%;
     margin: 0 auto;
     h2{
-        font-size: 2rem;
+        font-size: $h2-mobile;
         margin: 0.5em 0 1em 0;
     }
 
@@ -12,13 +21,13 @@ main{
     }
 
     h3{
-        font-size: 1.4rem;
+        font-size: $a-small-mobile;
         margin-bottom: 0.5em;
     }
 
     p{
         font-family: 'Stabil';
-        font-size: 1rem;
+        font-size: $text-mobile;
     }
 }
 
@@ -28,5 +37,14 @@ main{
     main{
         max-width: 40%;
         margin-left: 5%;
+    }
+    main h2{
+        font-size: $h2-pc;
+    }
+    main h3{
+        font-size: $h2-pc;
+    }
+    main p{
+        font-size: $text-pc;
     }
 }

@@ -50,6 +50,8 @@ let obrW = document.querySelector(".obr").width
 jobOffer.style.width = obrW + "px"
 jobOffer.style.height = obrH + "px"
 
+window.addEventListener("load", jobOffRes)
+
 window.onresize = jobOffRes
 
 function jobOffRes(){

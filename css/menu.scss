@@ -4,8 +4,14 @@
     box-sizing: border-box;
 }
 
+//VARIALBES
+$h2-pc: 40px;
+$text-pc: 20px;
+$a-small-pc: 20px;
 
-
+$h2-mobile: 26px;
+$text-mobile: 15px;
+$a-small-mobile: 20px;
 
 
 header{
@@ -70,13 +76,14 @@ header{
     border: none;
     outline: none;
     margin: 1em;
+    margin-top: 1.2em;
     padding-right: 16px;
     cursor: pointer;
 }
 
 .menu{
-    width: 100vw;
-    height: 0em;
+    width: 0;
+    height: 100vh;
     background: #E4D200;
     z-index: 1000;
     position: absolute;
@@ -90,6 +97,7 @@ header{
         border: none;
         outline: none;
         margin: 1em;
+        margin-top: 1.2em;
         padding-right: 16px;
         cursor: pointer;
     }
@@ -110,8 +118,10 @@ header{
         a{
             color: black;
             text-decoration: none;
-            font-size: 2rem;
+            font-size: $h2-mobile;
             margin: 0.75em 0;
+            min-width: 10em;
+            text-align: center;
         }
     }
 }
@@ -121,9 +131,8 @@ header{
 //OPEN/CLOSE MENU ANIMATIONS
 @keyframes openMenu {
     0%{
-    width: 100vw;
-    height: 0;
-    top: -10em; //koment
+    width: 0;
+    height: 100vh;
     }
     100%{
     display: block;
@@ -137,15 +146,15 @@ header{
     display: block;
     width: 100vw;
     height: 100vh;
+    left: 0;
     }
     100%{
-    width: 100vw;
-    height: 0;
+    width: 0;
+    height: 100vh;
     background: #E4D200;
     z-index: 1000;
     position: absolute;
-    right: 0;
-    top: -10em; //koment
+    left: 0;
     overflow: hidden;
     }
 }
@@ -178,5 +187,7 @@ header{
             margin-left: 0;
         }
     }
-    
+    .menu .menu-main a{
+        font-size: $h2-mobile;
+    }
 }

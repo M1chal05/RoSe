@@ -29,3 +29,6 @@ slider.addEventListener("scroll", function(){
     //KONTROLUJE KTERÝ SLIDE JE AKTIVNI A ROZSVÍTÍ TEČKU
 })
 
+
+
+

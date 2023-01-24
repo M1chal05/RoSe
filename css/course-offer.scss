@@ -1,11 +1,25 @@
+//VARIALBES
+$h2-pc: 40px;
+$text-pc: 20px;
+$a-small-pc: 20px;
+
+$h2-mobile: 26px;
+$text-mobile: 15px;
+$a-small-mobile: 20px;
+
 body{
     overflow-x: hidden;
 }
 
 main{
     h2{
-        max-width: 85%;
+        max-width: 90%;
         margin: 0 auto 3em auto;
+        font-size: $h2-mobile;
+    }
+
+    .lang-container{
+        width: 93%;
     }
 
     .lang-card{
@@ -19,7 +33,7 @@ main{
     }
 
     .lang-card h3{
-        font-size: 1.5rem;
+        font-size: $h2-mobile;
 
     }
 
@@ -51,6 +65,9 @@ main{
         background: #D9D9D9;
         border-radius: 2em;
     }
+    .container .prepared-heading{
+        margin: 2em auto 2em auto;
+    }
 }
 
 //MEDIA
@@ -60,10 +77,14 @@ main{
     main h2 br{
         display: none;
     }
+    main h2{
+        font-size: $h2-pc;
+    }
     main .container{
         min-width: 100vw;
         scroll-snap-align: start;
-        max-height: 90vh;
+        // max-height: 90vh;
+        
     }
     main::-webkit-scrollbar{
         display: none;
@@ -76,14 +97,23 @@ main{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         margin: 0 auto;
-        max-width: 88%;
+        width: 93%;
     }
     main .lang-container .lang-card{
         min-width: 90%;
         min-height: 15em;
         margin: 1em auto;
     }
-    
+    main .lang-container .lang-card h3{
+        font-size: $h2-pc;
+    }
+
+    main .prepared-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 93%;
+        margin: 0 auto;
+    }
     
     main .prepared-container .prepared{
         min-width: 90%;
@@ -92,28 +122,7 @@ main{
         margin: 1em auto;
     }
     
-    main .container .right-arrow{
-        height: 2em;
-        display: block;
-        margin: 1em;
-        cursor: pointer;
-        position: relative;
-        left: 94%;
-        top: -43%;
-    }
-
-    main .container .left-arrow{
-        height: 2em;
-        display: block;
-        margin: 1em;
-        cursor: pointer;
-        position: relative;
-        top: 52.5%;
-        transform: rotate(180deg);
-        left: 0;
-    }
-
     main .prepared-heading{
-        margin: 3em auto 1em auto;
+        margin: 2em auto 2em auto;
     }
 }

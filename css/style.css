@@ -1,5 +1,6 @@
 main h2 {
   margin: 1.25em;
+  font-size: 26px;
 }
 
 footer {
@@ -19,7 +20,7 @@ footer h1 {
 @media only screen and (min-width: 1000px) {
   main h2 {
     max-width: 22em;
-    font-size: 2.5rem;
+    font-size: 40px;
     margin-top: 0;
   }
 }/*# sourceMappingURL=style.css.map */

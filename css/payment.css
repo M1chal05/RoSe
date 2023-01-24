@@ -3,24 +3,33 @@ main {
   margin: 0 auto;
 }
 main h2 {
-  font-size: 2rem;
+  font-size: 26px;
   margin: 0.5em 0 1em 0;
 }
 main .payment-container {
   margin-bottom: 3em;
 }
 main h3 {
-  font-size: 1.4rem;
+  font-size: 20px;
   margin-bottom: 0.5em;
 }
 main p {
   font-family: "Stabil";
-  font-size: 1rem;
+  font-size: 15px;
 }
 
 @media only screen and (min-width: 1000px) {
   main {
     max-width: 40%;
     margin-left: 5%;
+  }
+  main h2 {
+    font-size: 40px;
+  }
+  main h3 {
+    font-size: 40px;
+  }
+  main p {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=payment.css.map */

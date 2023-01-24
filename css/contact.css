@@ -2,13 +2,21 @@ body {
   overflow-x: hidden;
 }
 
+main .slider .right-arrow {
+  display: none;
+}
+
+main .slider .left-arrow {
+  display: none;
+}
+
 main p {
   color: black;
 }
 main h2 {
   max-width: 85%;
   margin: 0 auto 2em auto;
-  font-size: 1.75rem;
+  font-size: 26px;
   color: black;
 }
 main .slider {
@@ -66,6 +74,7 @@ main .contact-info {
 }
 main .contact-info p {
   font-family: "Stabil";
+  font-size: 15px;
 }
 
 .dot-container {
@@ -93,27 +102,52 @@ main .contact-info p {
   margin: 0 0.25em;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1200px) {
   main .container {
     max-width: 40%;
   }
   main .container h2 {
     margin: 1em auto;
+    font-size: 20px;
   }
   main .slider {
     width: 50%;
     position: absolute;
-    top: 5%;
-    right: 4em;
+    top: 2%;
+    right: -2.75%;
     scroll-behavior: smooth;
-    gap: 2em;
+    gap: 0;
+    margin: 6em;
   }
   main .slider .slide {
     min-width: 100%;
   }
   main .slider .slide img {
     width: auto;
-    height: 40em;
+    max-width: 90%;
+    height: auto;
+    min-height: 75vh;
+    max-height: 85vh;
+  }
+  main .slider .right-arrow {
+    height: 2em;
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    right: 0;
+    top: 45%;
+    cursor: pointer;
+  }
+  main .slider .left-arrow {
+    height: 2em;
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 45%;
+    transform: rotate(180deg);
+    left: 0;
+    cursor: pointer;
+    overflow: visible;
   }
   main .dot-container {
     display: none;
@@ -126,14 +160,19 @@ main .contact-info p {
     margin: 0 1em;
   }
   main .contact-info {
-    justify-content: flex-start;
-    flex-direction: column;
+    max-width: 30%;
     margin: 0 3%;
   }
   main .contact-info p {
-    width: 20%;
+    width: 50%;
+    font-size: 20px;
   }
   main .mob {
     display: none;
+  }
+  main .bottom-cont {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 }/*# sourceMappingURL=contact.css.map */

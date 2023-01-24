@@ -1,10 +1,18 @@
+//VARIALBES
+$h2-pc: 40px;
+$text-pc: 20px;
+$a-small-pc: 20px;
+
+$h2-mobile: 26px;
+$text-mobile: 15px;
+$a-small-mobile: 20px;
 
 //MAIN
 main{
 
     h2{
         margin: 1.25em;
-        // font-size: 2.5vw;
+        font-size: $h2-mobile;
     }
 }
 
@@ -32,7 +40,7 @@ footer{
     
     main h2{
         max-width: 22em;
-        font-size: 2.5rem;
+        font-size: $h2-pc;
         margin-top: 0;
     }
 }

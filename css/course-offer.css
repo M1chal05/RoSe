@@ -3,8 +3,12 @@ body {
 }
 
 main h2 {
-  max-width: 85%;
+  max-width: 90%;
   margin: 0 auto 3em auto;
+  font-size: 26px;
+}
+main .lang-container {
+  width: 93%;
 }
 main .lang-card {
   margin: 1em auto;
@@ -16,7 +20,7 @@ main .lang-card {
   border-radius: 2em;
 }
 main .lang-card h3 {
-  font-size: 1.5rem;
+  font-size: 26px;
 }
 main .german {
   background: #E4D200;
@@ -40,15 +44,20 @@ main .prepared-container .prepared {
   background: #D9D9D9;
   border-radius: 2em;
 }
+main .container .prepared-heading {
+  margin: 2em auto 2em auto;
+}
 
 @media only screen and (min-width: 1000px) {
   main h2 br {
     display: none;
   }
+  main h2 {
+    font-size: 40px;
+  }
   main .container {
     min-width: 100vw;
     scroll-snap-align: start;
-    max-height: 90vh;
   }
   main::-webkit-scrollbar {
     display: none;
@@ -61,12 +70,21 @@ main .prepared-container .prepared {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
-    max-width: 88%;
+    width: 93%;
   }
   main .lang-container .lang-card {
     min-width: 90%;
     min-height: 15em;
     margin: 1em auto;
+  }
+  main .lang-container .lang-card h3 {
+    font-size: 40px;
+  }
+  main .prepared-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 93%;
+    margin: 0 auto;
   }
   main .prepared-container .prepared {
     min-width: 90%;
@@ -74,26 +92,7 @@ main .prepared-container .prepared {
     border-radius: 2em;
     margin: 1em auto;
   }
-  main .container .right-arrow {
-    height: 2em;
-    display: block;
-    margin: 1em;
-    cursor: pointer;
-    position: relative;
-    left: 94%;
-    top: -43%;
-  }
-  main .container .left-arrow {
-    height: 2em;
-    display: block;
-    margin: 1em;
-    cursor: pointer;
-    position: relative;
-    top: 52.5%;
-    transform: rotate(180deg);
-    left: 0;
-  }
   main .prepared-heading {
-    margin: 3em auto 1em auto;
+    margin: 2em auto 2em auto;
   }
 }/*# sourceMappingURL=course-offer.css.map */

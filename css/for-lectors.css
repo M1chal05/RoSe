@@ -1,12 +1,13 @@
 main h2 {
   max-width: 85%;
   margin: 0 auto;
+  font-size: 26px;
 }
 
 @media only screen and (min-width: 1000px) {
   main h2 {
-    max-width: 50%;
-    margin: 0 3em;
-    font-size: 1.5rem;
+    max-width: 60%;
+    margin: 0 2em;
+    font-size: 40px;
   }
 }/*# sourceMappingURL=for-lectors.css.map */

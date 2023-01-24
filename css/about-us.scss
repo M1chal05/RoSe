@@ -1,3 +1,12 @@
+//VARIALBES
+$h2-pc: 40px;
+$text-pc: 20px;
+$a-small-pc: 20px;
+
+$h2-mobile: 26px;
+$text-mobile: 15px;
+$a-small-mobile: 20px;
+
 body{
     max-width: 100%;
 }
@@ -11,6 +20,8 @@ main{
         text-align: left;
         max-width: 85%;
         margin: 0 auto 5em auto;
+        font-size: $h2-mobile;
+        line-height: 1;
     }
 
     .dot{
@@ -37,7 +48,7 @@ main{
         position: absolute;
         left: 0;
         right: 0;
-        bottom: 11em;
+        bottom: 8.5em;
     }
 
     .slider{
@@ -85,7 +96,7 @@ main{
 
     .slider .slide h3{
         text-align: center;
-        font-size: 2rem;
+        font-size: $a-small-mobile;
         margin: 2em 0;
     }
 
@@ -95,6 +106,7 @@ main{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         min-width: 0px;
     }
 
@@ -103,6 +115,7 @@ main{
         max-width: 10em;
         padding: 0.5em;
         margin-bottom: 1em;
+        font-size: $a-small-mobile;
     }
 
     .slider .slide .job-offer a{
@@ -113,7 +126,7 @@ main{
         text-align: center;
         padding: 0.75em 1em;
         border-radius: 10em;
-        font-size: 1.25rem;
+        font-size: $a-small-mobile;
     }    
 }
 
@@ -124,6 +137,7 @@ main{
     main h2{
         margin-bottom: 1em;
         max-width: 90%;
+        font-size: $h2-pc;
 
         br{
             display: none;
@@ -145,6 +159,10 @@ main{
         scroll-behavior: smooth;
         height: 100%;
     }
+    main .slider .slide h3{
+        margin-top: 0.5em;
+        font-size: $text-pc;
+    }
     main .slider .slide a img{
         width: auto;
         max-width: 100%;
@@ -157,7 +175,7 @@ main{
         cursor: pointer;
         position: absolute;
         right: 0em;
-        top: 40%;
+        top: 50%;
     }
 
     main .slider .pc-slide .left-arrow{
@@ -166,7 +184,7 @@ main{
         margin: 1em;
         cursor: pointer;
         position: absolute;
-        top: 40%;
+        top: 50%;
         transform: rotate(180deg);
         left: 0;
     }
@@ -178,6 +196,10 @@ main{
     }
     main .slider .slide .job-offer{
         background: #93CFC2;
+    }
+
+    main .slider .slide .job-offer h3{
+        font-size: $h2-pc;
     }
 }
 

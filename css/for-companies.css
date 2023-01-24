@@ -5,6 +5,7 @@ main {
 main h2 {
   max-width: 85%;
   margin: auto;
+  font-size: 26px;
 }
 main .slider {
   display: flex;
@@ -33,7 +34,7 @@ main .slider .slide {
   align-items: center;
   background: #D9D9D9;
   border-radius: 2em;
-  height: 25em;
+  height: 30em;
   max-width: 85%;
   margin-top: 3em;
 }
@@ -44,11 +45,13 @@ main .slider .slide {
   font-family: "Stabil";
   max-width: 85%;
   text-align: center;
+  font-size: 15px;
 }
 .card a {
   text-decoration: none;
   color: black;
   margin-top: 2em;
+  font-size: 15px;
 }
 
 .dot {
@@ -77,6 +80,12 @@ main .slider .slide {
 }
 
 @media only screen and (min-width: 1000px) {
+  body {
+    overflow-x: hidden;
+  }
+  main h2 {
+    font-size: 40px;
+  }
   main .dot-container {
     display: none;
   }
@@ -86,5 +95,12 @@ main .slider .slide {
   main .slider {
     max-width: 90%;
     margin: 0 auto;
+    padding-bottom: 2em;
+  }
+  .card p {
+    font-size: 20px;
+  }
+  .card a {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=for-companies.css.map */

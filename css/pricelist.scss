@@ -1,12 +1,23 @@
+//VARIALBES
+$h2-pc: 40px;
+$text-pc: 20px;
+$a-small-pc: 20px;
+
+$h2-mobile: 26px;
+$text-mobile: 15px;
+$a-small-mobile: 20px;
+
 main{
     h2{
         max-width: 85%;
         margin: auto;
+        font-size: $h2-mobile;
     }
 
     h2 a{
         text-decoration: none;
         color: black;
+        font-size: $h2-mobile;
     }
 
     .slider{
@@ -39,18 +50,18 @@ main{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        padding-top: 25%;
         border-radius: 2em;
 
         h3{
             text-align: center;
-            font-size: 1.75rem;
+            font-size: $h2-mobile;
             margin-bottom: 1em;
         }
 
         p{
             font-family: 'Stabil';
-            font-size: 1.1rem;
+            font-size: $a-small-mobile;
             
         }
     }
@@ -99,7 +110,10 @@ main{
 @media only screen and (min-width: 1000px){
 
     main h2{
-        font-size: 2vw;
+        font-size: $h2-pc;
+    }
+    main h2 a{
+        font-size: $h2-pc;
     }
     main h2 a br{
         display: none;
@@ -111,7 +125,12 @@ main{
         min-width: auto;
         width: 33%;
     }
-
+    main .slider .slide .price-card h3{
+        font-size: $h2-pc;
+    }
+    main .slider .slide .price-card p{
+        font-size: $a-small-pc;
+    }
     main .dot-container{
         display: none;
     }

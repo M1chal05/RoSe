@@ -8,10 +8,12 @@
 
     <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/form.css">
+
+    <script src="./submit-form.js" defer></script>
 </head>
 <body>
 
-    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScWKruWd3_5cYgmnzPjbuM81gNsN4Ta9BAAx9Qq9h4qLCOdMg/formResponse" method="post">
+    <form id="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScWKruWd3_5cYgmnzPjbuM81gNsN4Ta9BAAx9Qq9h4qLCOdMg/formResponse" method="post">
 
         <input type="text" name="entry.1542329120" placeholder="Tvoje jméno a příjmení" required class="content">
 
@@ -36,7 +38,7 @@
             <option value="Skupina">Skupina</option>
         </select>
 
-        <button type="submit" class="content">Odeslat přihlášku</button>
+        <button type="button" id="submitForm" class="content">Odeslat přihlášku</button>
 
     </form>
     

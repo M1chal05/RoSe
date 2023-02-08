@@ -12,7 +12,7 @@ main h2 {
   max-width: 85%;
   margin: 0 auto 5em auto;
   font-size: 26px;
-  line-height: 1;
+  line-height: 1.2;
 }
 main .dot {
   width: 10px;
@@ -30,7 +30,6 @@ main .active-dot {
 }
 main .dot-container {
   display: flex;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 1em auto;
@@ -43,8 +42,7 @@ main .dot-container {
 main .slider {
   display: flex;
   overflow-x: scroll;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
 }
 main .slider .left-arrow {
   display: none;
@@ -68,6 +66,7 @@ main .slider .slide {
 }
 main .slider .pc-slide {
   display: flex;
+  align-items: flex-start;
 }
 main .slider .slide a img {
   max-width: 100%;
@@ -89,12 +88,14 @@ main .slider .slide .job-offer {
   align-items: center;
   justify-content: center;
   min-width: 0px;
+  margin-top: 16px;
 }
 main .slider .slide .job-offer h3 {
   max-width: 10em;
   padding: 0.5em;
   margin-bottom: 1em;
   font-size: 20px;
+  line-height: 1.2;
 }
 main .slider .slide .job-offer a {
   color: black;
@@ -107,11 +108,12 @@ main .slider .slide .job-offer a {
   font-size: 20px;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1280px) {
   main h2 {
     margin-bottom: 1em;
     max-width: 90%;
     font-size: 40px;
+    line-height: 1.2;
   }
   main h2 br {
     display: none;

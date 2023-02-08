@@ -12,6 +12,7 @@ main{
         max-width: 85%;
         margin: auto;
         font-size: $h2-mobile;
+        line-height: 1.2;
     }
 
     h2 a{
@@ -91,16 +92,18 @@ main{
 
     
 
-    .individual{
+    .slider .slide .individual{
         background: #E4D200;
     }
 
-    .twice{
+    .slider .slide .twice{
         background: #B59AB7;
+        padding-top: 27%;
     }
 
-    .group{
+    .slider .slide .group{
         background: #93CFC2;
+        padding-top: 23%;
     }
 }
 
@@ -111,6 +114,7 @@ main{
 
     main h2{
         font-size: $h2-pc;
+        line-height: 1.2;
     }
     main h2 a{
         font-size: $h2-pc;

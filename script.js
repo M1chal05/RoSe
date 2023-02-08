@@ -67,6 +67,8 @@ jobOffer.style.height = obrH + "px"
 //FUNKCE SIPEK(POSOUVANI PRES HRANU)
 
 let maxScrollLeft = slider.scrollWidth - slider.clientWidth
+Larrow1.style.display = "none"
+Larrow2.style.display = "none"
 
 slider.addEventListener("scroll", function(){
 
@@ -81,6 +83,8 @@ slider.addEventListener("scroll", function(){
         Larrow2.addEventListener("click", function(){
             slider.scrollLeft = maxScrollLeft
         })
+        Larrow1.style.display = "none"
+        Larrow2.style.display = "none"
     }
     else{
         Larrow1.addEventListener("click", function(){
@@ -90,6 +94,8 @@ slider.addEventListener("scroll", function(){
         Larrow2.addEventListener("click", function(){
             slider.scrollLeft += -window.innerWidth
         })
+        Larrow1.style.display = "initial"
+        Larrow2.style.display = "initial"
     }
 
     if(slider.scrollLeft == maxScrollLeft){
@@ -100,6 +106,8 @@ slider.addEventListener("scroll", function(){
         Rarrow2.addEventListener("click", function(){
             slider.scrollLeft = 32
         })
+        Rarrow1.style.display = "none"
+        Rarrow2.style.display = "none"
     }
     else{
         Rarrow1.addEventListener("click", function(){
@@ -109,6 +117,8 @@ slider.addEventListener("scroll", function(){
         Rarrow2.addEventListener("click", function(){
             slider.scrollLeft += window.innerWidth
         })
+        Rarrow1.style.display = "initial"
+        Rarrow2.style.display = "initial"
     }
 })
 

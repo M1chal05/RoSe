@@ -6,12 +6,12 @@ main h2 {
   max-width: 85%;
   margin: auto;
   font-size: 26px;
+  line-height: 1.2;
 }
 main .slider {
   display: flex;
   overflow-x: scroll;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
 }
 main .slider::-webkit-scrollbar {
   display: none;
@@ -72,7 +72,6 @@ main .slider .slide {
 
 .dot-container {
   display: flex;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 1em auto;
@@ -85,6 +84,7 @@ main .slider .slide {
   }
   main h2 {
     font-size: 40px;
+    line-height: 1.2;
   }
   main .dot-container {
     display: none;

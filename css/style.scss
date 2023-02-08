@@ -13,6 +13,7 @@ main{
     h2{
         margin: 1.25em;
         font-size: $h2-mobile;
+        line-height: 1.2;
     }
 }
 
@@ -46,7 +47,7 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    display: none;
+    display: none;  //koment
 }
 
 .popup h2{
@@ -102,6 +103,7 @@ footer{
     .lang-slct-btn{
         color: #000;
         padding: 16px;
+        margin-right: 1em;
         font-size: 16px;
         border: none;
         background: none;
@@ -145,13 +147,23 @@ footer{
 
 .close-popup-btn{
     background: none;
-    border: none;
     outline: none;
-    margin: 1em;
-    margin-top: 1.2em;
-    padding-right: 16px;
+    border: none;
+    margin: 2em 0;
+    font-size: $a-small-mobile;
+    text-decoration: underline;
     cursor: pointer;
 }
+
+
+
+
+
+
+.BeeCookie-text{
+    font-family: 'Labil';
+}
+
 
 
 //MEDIA
@@ -180,5 +192,9 @@ footer{
 
     .popup form input{
         font-size: $h2-pc;
+    }
+
+    .popup .close-popup-btn{
+        font-size: $a-small-pc;
     }
 }

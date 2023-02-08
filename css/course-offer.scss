@@ -16,6 +16,7 @@ main{
         max-width: 90%;
         margin: 0 auto 3em auto;
         font-size: $h2-mobile;
+        line-height: 1.2;
     }
 
     .lang-container{
@@ -87,6 +88,7 @@ main{
     }
     main h2{
         font-size: $h2-pc;
+        line-height: 1.2;
     }
     main .container{
         min-width: 100vw;
@@ -113,6 +115,9 @@ main{
         margin: 1em auto;
     }
     main .lang-container .lang-card h3{
+        font-size: $h2-pc;
+    }
+    main .lang-card h3{
         font-size: $h2-pc;
     }
 

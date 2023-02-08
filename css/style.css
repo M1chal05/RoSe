@@ -1,6 +1,7 @@
 main h2 {
   margin: 1.25em;
   font-size: 26px;
+  line-height: 1.2;
 }
 
 footer {
@@ -64,10 +65,6 @@ footer h1 {
   color: black;
 }
 
-.popup form input:-ms-input-placeholder {
-  color: black;
-}
-
 .popup form input::placeholder {
   color: black;
 }
@@ -91,6 +88,7 @@ footer h1 {
 .popup .popup-header .lang-slct-btn {
   color: #000;
   padding: 16px;
+  margin-right: 1em;
   font-size: 16px;
   border: none;
   background: none;
@@ -134,12 +132,16 @@ footer h1 {
 
 .close-popup-btn {
   background: none;
-  border: none;
   outline: none;
-  margin: 1em;
-  margin-top: 1.2em;
-  padding-right: 16px;
+  border: none;
+  margin: 2em 0;
+  font-size: 20px;
+  text-decoration: underline;
   cursor: pointer;
+}
+
+.BeeCookie-text {
+  font-family: "Labil";
 }
 
 @media only screen and (min-width: 1000px) {
@@ -160,5 +162,8 @@ footer h1 {
   }
   .popup form input {
     font-size: 40px;
+  }
+  .popup .close-popup-btn {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=style.css.map */

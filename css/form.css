@@ -1,6 +1,7 @@
 body {
   max-width: 100vw;
   max-height: 100vh;
+  overflow-x: hidden;
 }
 
 form {
@@ -21,6 +22,7 @@ form {
   border-radius: 2em;
   outline: none;
   border: 1px solid black;
+  color: black;
 }
 
 select {
@@ -29,6 +31,16 @@ select {
 
 button {
   cursor: pointer;
+}
+
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding-right: 15px;
+  background-image: url("../images/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 3px) center;
 }
 
 @media only screen and (min-width: 1000px) {

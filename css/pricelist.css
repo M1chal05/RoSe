@@ -2,6 +2,7 @@ main h2 {
   max-width: 85%;
   margin: auto;
   font-size: 26px;
+  line-height: 1.2;
 }
 main h2 a {
   text-decoration: none;
@@ -10,13 +11,11 @@ main h2 a {
 }
 main .slider {
   display: flex;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin: 3em auto;
   overflow-x: scroll;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
 }
 main .slider::-webkit-scrollbar {
   display: none;
@@ -51,7 +50,6 @@ main .slider .slide .price-card p {
 }
 main .dot-container {
   display: flex;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 1em auto;
@@ -71,19 +69,22 @@ main .active-dot {
   background-color: black;
   margin: 0 0.25em;
 }
-main .individual {
+main .slider .slide .individual {
   background: #E4D200;
 }
-main .twice {
+main .slider .slide .twice {
   background: #B59AB7;
+  padding-top: 27%;
 }
-main .group {
+main .slider .slide .group {
   background: #93CFC2;
+  padding-top: 23%;
 }
 
 @media only screen and (min-width: 1000px) {
   main h2 {
     font-size: 40px;
+    line-height: 1.2;
   }
   main h2 a {
     font-size: 40px;

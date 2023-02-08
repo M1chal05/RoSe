@@ -18,6 +18,7 @@ main{
         max-width: 85%;
         margin: auto;
         font-size: $h2-mobile;
+        line-height: 1.2;
     }
 
     .slider{
@@ -111,6 +112,7 @@ main{
 
     main h2{
         font-size: $h2-pc;
+        line-height: 1.2;
     }
 
     main .dot-container{

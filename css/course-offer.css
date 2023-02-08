@@ -6,6 +6,7 @@ main h2 {
   max-width: 90%;
   margin: 0 auto 3em auto;
   font-size: 26px;
+  line-height: 1.2;
 }
 main .lang-container {
   width: 93%;
@@ -61,6 +62,7 @@ main .container .prepared-heading {
   }
   main h2 {
     font-size: 40px;
+    line-height: 1.2;
   }
   main .container {
     min-width: 100vw;
@@ -85,6 +87,9 @@ main .container .prepared-heading {
     margin: 1em auto;
   }
   main .lang-container .lang-card h3 {
+    font-size: 40px;
+  }
+  main .lang-card h3 {
     font-size: 40px;
   }
   main .prepared-container {

@@ -21,7 +21,7 @@ main{
         max-width: 85%;
         margin: 0 auto 5em auto;
         font-size: $h2-mobile;
-        line-height: 1;
+        line-height: 1.2;
     }
 
     .dot{
@@ -84,6 +84,7 @@ main{
 
     .slider .pc-slide{
         display: flex;
+        align-items: flex-start;
     }
 
     .slider .slide a img{
@@ -109,6 +110,7 @@ main{
         align-items: center;
         justify-content: center;
         min-width: 0px;
+        margin-top: 16px;
     }
 
 
@@ -117,6 +119,7 @@ main{
         padding: 0.5em;
         margin-bottom: 1em;
         font-size: $a-small-mobile;
+        line-height: 1.2;
     }
 
     .slider .slide .job-offer a{
@@ -134,11 +137,12 @@ main{
 
 //MEDIA
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 1280px){   
     main h2{
         margin-bottom: 1em;
         max-width: 90%;
         font-size: $h2-pc;
+        line-height: 1.2;
 
         br{
             display: none;

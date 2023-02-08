@@ -8,10 +8,48 @@
 
     <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/menu.css">
 
     <script src="./submit-form.js" defer></script>
+    <script src="./menu.js" defer></script>
 </head>
 <body>
+
+    <header>
+        <div class="language-select">
+            <button class="lang-slct-btn">CZ</button>
+            <div class="lng-slct-content">
+              <a href="#">EN</a>
+              <a href="#">DE</a>
+              <a href="#">SK</a>
+            </div>
+          </div>
+    
+          <button class="open-menu-btn"><img src="./images/menu-icon.svg" alt="Otevření menu"></button>
+          <div class="menu">
+    
+            <div class="menu-header">
+            <div class="language-select">
+                <button class="lang-slct-btn">CZ</button>
+                <div class="lng-slct-content">
+                  <a href="#">EN</a>
+                  <a href="#">DE</a>
+                  <a href="#">SK</a>
+                </div>
+              </div>
+        
+              <button class="close-menu-btn"><img src="./images/x.svg" alt="Zavření menu"></button>
+            </div>
+    
+            <div class="menu-main">
+                <a href="./about-us.html">o nás</a>
+                <a href="./course-offer.html">nabídka kurzů</a>
+                <a href="./pricelist.html">ceník</a>
+                <a href="./for-companies.html">pro firmy</a>
+                <a href="./contact.html">kontakt</a>
+            </div>
+            </div>
+    </header>
 
     <form id="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScWKruWd3_5cYgmnzPjbuM81gNsN4Ta9BAAx9Qq9h4qLCOdMg/formResponse" method="post">
 

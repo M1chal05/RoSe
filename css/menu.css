@@ -10,7 +10,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -93,33 +92,29 @@ header .language-select:active .lng-slct-content {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  position: absolute;
+  top: 0;
+  z-index: 10000;
 }
 .menu .menu-main {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 5em;
+  gap: 2em;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 .menu .menu-main a {
   color: black;
   text-decoration: none;
   font-size: 26px;
-  margin: 0.75em 0;
   min-width: 10em;
   text-align: center;
-}
-
-@-webkit-keyframes openMenu {
-  0% {
-    width: 0;
-    height: 100vh;
-  }
-  100% {
-    display: block;
-    width: 100vw;
-    height: 100vh;
-  }
 }
 
 @keyframes openMenu {
@@ -131,23 +126,6 @@ header .language-select:active .lng-slct-content {
     display: block;
     width: 100vw;
     height: 100vh;
-  }
-}
-@-webkit-keyframes closeMenu {
-  0% {
-    display: block;
-    width: 100vw;
-    height: 100vh;
-    left: 0;
-  }
-  100% {
-    width: 0;
-    height: 100vh;
-    background: #E4D200;
-    z-index: 1000;
-    position: absolute;
-    left: 0;
-    overflow: hidden;
   }
 }
 @keyframes closeMenu {
@@ -187,6 +165,6 @@ header .language-select:active .lng-slct-content {
     margin-left: 0;
   }
   .menu .menu-main a {
-    font-size: 26px;
+    font-size: 40px;
   }
 }/*# sourceMappingURL=menu.css.map */

@@ -57,11 +57,11 @@ main{
         scroll-snap-type: x mandatory;
     }
 
-    .slider .left-arrow{
-        display: none;
+    .slider .pc-slide .left-arrow{
+        display: none; 
     }
 
-    .slider .right-arrow{
+    .slider .pc-slide .right-arrow{
         display: none;
     }
 
@@ -210,3 +210,14 @@ main{
 
 
 
+@media only screen and (max-width: 1280px){
+
+    main .slider .pc-slide .left-arrow{
+        display: none !important;
+    }
+
+    main .slider .pc-slide .right-arrow{
+        display: none !important;
+    }
+
+}

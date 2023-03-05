@@ -44,10 +44,10 @@ main .slider {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
 }
-main .slider .left-arrow {
+main .slider .pc-slide .left-arrow {
   display: none;
 }
-main .slider .right-arrow {
+main .slider .pc-slide .right-arrow {
   display: none;
 }
 main .slider::-webkit-scrollbar {
@@ -172,5 +172,13 @@ main .slider .slide .job-offer a {
   }
   main .slider .slide .job-offer h3 {
     font-size: 40px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  main .slider .pc-slide .left-arrow {
+    display: none !important;
+  }
+  main .slider .pc-slide .right-arrow {
+    display: none !important;
   }
 }/*# sourceMappingURL=about-us.css.map */

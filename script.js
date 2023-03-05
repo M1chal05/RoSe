@@ -122,3 +122,4 @@ slider.addEventListener("scroll", function(){
     }
 })
 
+

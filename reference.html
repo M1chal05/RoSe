@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>rozmluv se - ceník</title>
-
     <link rel="stylesheet" href="./css/menu.css">
-    <link rel="stylesheet" href="./css/pricelist.css">
     <link rel="stylesheet" href="./css/general.css">
-
+    <link rel="stylesheet" href="./css/reference.css">
+    
+    
+    
     <script src="menu.js" defer></script>
     <script src="slider.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>rozmluv se - o nás</title>
 </head>
 <body>
-<div class="cont">
 
+<div class="cont">
     <header>
         <div class="language-select">
             <button class="lang-slct-btn">CZ</button>
@@ -45,56 +47,65 @@
             <div class="menu-main">
                 <a href="./about-us.html">o nás</a>
                 <a href="./course-offer.html">nabídka kurzů</a>
-                <a href="./pricelist.html">ceník</a>
+                <a href="pricelist.html">ceník</a>
                 <a href="./for-companies.html">pro firmy</a>
                 <a href="./contact.html">kontakt</a>
             </div>
             </div>
     </header>
 
-
     <main>
         <h2>
-            <h2>Ceny pro online i offline lekce jsou stejné. Více o přihlašování, platbách a storno podmínkách se dozvíte <a href="payment.html">zde→</a> </h2>
+            Vaše zpětná vazba nás nabíjí a posunuje kupředu. Ještě nějaký kratičký text, který bude vést lidi k tomu, aby s námi sdíleli své pozitivní ohlasy. Patříte mezi ně? Pošlete nám zprávu!
         </h2>
+
+        <div class="dot-container">
+          <div class="dot active-dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
 
         <div class="slider">
 
-            <div class="slide">
-                <div class="price-card individual">
-                    <h3>jednotlivec <br> 1 osoba</h3>
-                    <p>30 min./390 Kč</p>
-                    <p>50 min./650 Kč</p>
-                </div>
-            </div>
+            <div class="pc-slide">
 
             <div class="slide">
-                <div class="price-card twice">
-                    <h3>dvojice <br> 2 osoby</h3>
-                    <p>60 min./390 Kč</p>
-                    <p>za 1 osobu</p>
+                <div class="card red">
+                    <img src="./images/reference1.jpg" alt="Obrázek recenzenta">
+                    <p>,,Na začátku <br> to bylo strašné, <br> pak to bylo lepší, <br> no a teď už se učím <br> třetí rok německy."</p>
                 </div>
+                <h3>Eva (zdravotní sestra v Německu) <br> absolventka němčiny</h3>
             </div>
 
+
             <div class="slide">
-                <div class="price-card group">
-                    <h3>skupina <br> 3-5 osob</h3>
-                    <p>60 min./390 Kč</p>
-                    <p>za 1 osobu</p>
-                    <br>
-                    <p>90 min./420 Kč</p>
-                    <p>za 1 osobu</p>
+                <div class="card yellow">
+                    <img src="./images/reference2.jpg" alt="Obrázek recenzenta">
+                    <p>,,Rozmluvil jsem se <br> vietnamsky"</p>
                 </div>
+                <h3>Matouš (freelancer) <br> absolvent vietnamštiny</h3>
             </div>
+
+
+            <div class="slide">
+                <div class="card blue">
+                    <img src="./images/reference3.jpg" alt="Obrázek recenzenta">
+                    <p>,,I při mateřské jsem <br> si mohla zlepšit <br> angličtinu, kterou jsem <br> uplatnila ve své <br> nové práci."</p>
+                </div>
+                <h3>Lucie (mamina na mateřské) <br> absolventka angličtiny</h3>
+            </div>
+
+            <img src="./images/arrow.png" alt="šipka vpravo" class="right-arrow" id="rArrow1">
+            </div>
+        
+        
+        
+        
         </div>
 
-        <div class="dot-container">
-            <div class="dot active-dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-        </div>
+        
+
     </main>
 
-</div>    
 </body>
 </html>

@@ -1,15 +1,11 @@
 //VARIALBES
-$h2-pc: 40px;
+$h2-pc: 30px;
 $text-pc: 20px;
 $a-small-pc: 20px;
 
-$h2-mobile: 26px;
+$h2-mobile: 30px;
 $text-mobile: 20px;
 $a-small-mobile: 20px;
-
-body{
-    max-width: 100%;
-}
 
 main{
     max-width: 100%;
@@ -55,7 +51,7 @@ main{
         position: absolute;
         left: 0;
         right: 0;
-        bottom: 6em;
+        bottom: 7em;
     }
 
     .slider{
@@ -94,51 +90,54 @@ main{
         align-items: flex-start;
     }
 
-    .slider .slide img{
-        max-width: 85%;
-        max-height: 100%;
-        border-radius: 2em;
-        margin: 1em;
+
+    .slider .slide{
+        h3{
+            margin: 4em 0;
+            text-align: center;
+        }
+
+        .card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 2em;
+            height: 30em;
+            width: 85%;
+            margin-top: 3em;
+        
+            img{
+                margin: 3em auto;
+                width: auto;
+                max-width: 10em;
+                border-radius: 50%;
+            }
+        
+            p{
+                text-align: center;
+                font-size: $text-mobile;
+                padding-top: 2em;
+            }
+        }
     }
 
-
-    .slider .slide h3{
-        text-align: center;
-        font-size: $a-small-mobile;
-        margin: 2em 0;
-    }
-
-    .slider .slide .job-offer{
-        background: #93CFC2;
-        border-radius: 2em;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-width: 0px;
-        margin-top: 16px;
-    }
-
-
-    .slider .slide .job-offer h3{
-        max-width: 10em;
-        padding: 0.5em;
-        margin-bottom: 1em;
-        font-size: $a-small-mobile;
-        line-height: 1.2;
-    }
-
-    .slider .slide .job-offer a{
-        color: black;
-        text-decoration: none;
-        width: 60%;
-        background: #FFFFFF;
-        text-align: center;
-        padding: 0.75em 1em;
-        border-radius: 10em;
-        font-size: $a-small-mobile;
-    }    
+     
 }
+
+.red{
+    background: #E15A2F;
+}
+
+.yellow{
+    background: #E4D200;
+}
+
+.blue{
+    background: #2196CF;
+}
+
+
+
 
 
 //MEDIA
@@ -174,11 +173,6 @@ main{
         margin-top: 0.5em;
         font-size: $text-pc;
     }
-    main .slider .slide a img{
-        width: auto;
-        max-width: 100%;
-        max-height: 100%;
-    }
     main .slider .pc-slide .right-arrow{
         height: 2em;
         display: block;
@@ -204,13 +198,6 @@ main{
         min-width: 100%;
         margin: 0 1em;
         height: 100%;
-    }
-    main .slider .slide .job-offer{
-        background: #93CFC2;
-    }
-
-    main .slider .slide .job-offer h3{
-        font-size: $h2-pc;
     }
 }
 

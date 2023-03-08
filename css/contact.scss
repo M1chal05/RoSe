@@ -4,7 +4,7 @@ $text-pc: 20px;
 $a-small-pc: 20px;
 
 $h2-mobile: 26px;
-$text-mobile: 15px;
+$text-mobile: 20px;
 $a-small-mobile: 20px;
 
 body{
@@ -20,20 +20,21 @@ main .slider .left-arrow{
 
 main{
 
-    p{
-        color: black;
-    }
-
     h2{
         max-width: 85%;
-        margin: 0 auto 2em auto;
-        font-size: $h2-mobile;
+        margin: 0 auto 1em auto;
+        font-size: $text-mobile;
+        font-family: 'Stabil';
+        font-weight: 500;
         color: black;
         line-height: 1.2;
     }
 
     #popupBtn{
         cursor: pointer;
+        font-family: 'Labil';
+        margin: 0 auto;
+        margin-top: -0.5em;
     }
 
     .slider{
@@ -51,6 +52,8 @@ main{
     .slider .slide img{
         margin-bottom: 1.5em;
         border-radius: 2em;
+        max-width: 85%;
+        max-height: 100%;
     }
 
     .slider{
@@ -76,33 +79,7 @@ main{
         min-width: 100vw;
         scroll-snap-align: start;
     }
-
-    .social-sites{
-        margin: 3em auto;
-        max-width: 60%;
-        display: flex;
-        justify-content: space-between;
-
-        img{
-            width: 2em;
-        }
-    }
-
-    .contact-info{
-        max-width: 85%;
-        margin: 0 auto;
-        padding-bottom: 1em;
-        display: flex;
-        justify-content: space-between;
-
-        p{
-            font-family: 'Stabil';
-            font-size: $text-mobile;
-        }
-    }
 }
-
-
 
 .dot-container{
     display: flex;

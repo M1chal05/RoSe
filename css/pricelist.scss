@@ -3,22 +3,24 @@ $h2-pc: 40px;
 $text-pc: 20px;
 $a-small-pc: 20px;
 
-$h2-mobile: 26px;
-$text-mobile: 15px;
+$h2-mobile: 30px;
+$text-mobile: 20px;
 $a-small-mobile: 20px;
 
 main{
     h2{
         max-width: 85%;
         margin: auto;
-        font-size: $h2-mobile;
+        font-family: 'Stabil';
+        font-weight: 500;
+        font-size: $text-mobile;
         line-height: 1.2;
     }
 
     h2 a{
         text-decoration: none;
         color: black;
-        font-size: $h2-mobile;
+        font-size: $text-mobile;
     }
 
     .slider{

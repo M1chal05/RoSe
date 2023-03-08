@@ -1,13 +1,15 @@
 main h2 {
   max-width: 85%;
   margin: auto;
-  font-size: 26px;
+  font-family: "Stabil";
+  font-weight: 500;
+  font-size: 20px;
   line-height: 1.2;
 }
 main h2 a {
   text-decoration: none;
   color: black;
-  font-size: 26px;
+  font-size: 20px;
 }
 main .slider {
   display: flex;
@@ -41,7 +43,7 @@ main .slider .slide .price-card {
 }
 main .slider .slide .price-card h3 {
   text-align: center;
-  font-size: 26px;
+  font-size: 30px;
   margin-bottom: 1em;
 }
 main .slider .slide .price-card p {

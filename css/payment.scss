@@ -4,36 +4,34 @@ $text-pc: 20px;
 $a-small-pc: 20px;
 
 $h2-mobile: 26px;
-$text-mobile: 15px;
+$text-mobile: 20px;
 $a-small-mobile: 20px;
 
 main{
 
     max-width: 85%;
     margin: 0 auto;
-    h2{
-        font-size: $h2-mobile;
-        margin: 0.5em 0 1em 0;
-    }
+    
 
     .payment-container{
         margin-bottom: 3em;
-    }
 
-    h3{
-        font-size: $a-small-mobile;
-        margin-bottom: 0.5em;
-    }
-
-    p{
-        font-family: 'Stabil';
-        font-size: $text-mobile;
+        p{
+            font-family: 'Stabil';
+            font-size: $text-mobile;
+            font-weight: 500;
+    
+            span{
+                font-family: 'Labil';
+                font-weight: 700;
+            }
+        }
     }
 }
 
 //MEDIA
 
-@media only screen and(min-width:1000px){
+@media only screen and (min-width:1000px){
     main{
         max-width: 40%;
         margin-left: 5%;

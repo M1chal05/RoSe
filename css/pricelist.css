@@ -34,7 +34,7 @@ main .slider .slide {
 }
 main .slider .slide .price-card {
   width: 85%;
-  height: 30em;
+  height: 35em;
   display: flex;
   flex-direction: column;
   align-items: center;

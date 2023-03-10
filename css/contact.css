@@ -28,26 +28,13 @@ main #popupBtn {
 main .slider {
   display: flex;
   overflow-x: scroll;
-}
-main .slider .slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-}
-main .slider .slide img {
-  margin-bottom: 1.5em;
-  border-radius: 2em;
-  max-width: 85%;
-  max-height: 100%;
-}
-main .slider {
-  display: flex;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin: 3em auto;
-  overflow-x: scroll;
   scroll-snap-type: x mandatory;
+}
+main .slider .pc-slide .left-arrow {
+  display: none;
+}
+main .slider .pc-slide .right-arrow {
+  display: none;
 }
 main .slider::-webkit-scrollbar {
   display: none;
@@ -58,9 +45,20 @@ main .slider {
 }
 main .slider .slide {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   min-width: 100vw;
   scroll-snap-align: start;
+}
+main .slider .pc-slide {
+  display: flex;
+  align-items: flex-start;
+}
+main .slider .slide img {
+  max-width: 85%;
+  max-height: 100%;
+  border-radius: 2em;
+  margin: 1em;
 }
 
 .dot-container {
@@ -68,7 +66,7 @@ main .slider .slide {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0em auto;
-  padding-bottom: 1em;
+  padding-bottom: 2em;
 }
 
 .dot {
@@ -212,49 +210,73 @@ main .slider .slide {
 
 @media only screen and (min-width: 1200px) {
   main .container {
-    max-width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 95%;
+    margin-bottom: 2em;
+  }
+  main .container .inner-cont {
+    display: flex;
+    flex-direction: column;
+  }
+  main .container .inner-cont #popupBtn {
+    margin: 0;
+  }
+  main .container .inner-cont h2 {
+    margin: 0;
   }
   main .container h2 {
-    margin: 1em auto;
-    font-size: 20px;
+    margin: 0 2.5em;
+    font-size: 30px;
     line-height: 1.2;
-  }
-  main .slider {
-    width: 50%;
-    position: absolute;
-    top: 2%;
-    right: -2.75%;
-    scroll-behavior: smooth;
-    gap: 0;
-    margin: 6em;
+    max-width: 29em;
   }
   main .slider .slide {
-    min-width: 100%;
-  }
-  main .slider .slide img {
+    min-width: 31%;
+    max-width: 31%;
     width: auto;
-    max-width: 90%;
-    height: auto;
-    min-height: 75vh;
-    max-height: 85vh;
+    margin: 0 1em;
   }
-  main .slider .right-arrow {
+  main .slider {
+    max-width: 95%;
+    margin: 0 auto;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    height: 100%;
+  }
+  main .slider .slide h3 {
+    margin-top: 0.5em;
+    font-size: 20px;
+  }
+  main .slider .slide a img {
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  main .slider .pc-slide .right-arrow {
     height: 2em;
-    display: block;
-    position: sticky;
-    right: 0;
-    top: 45%;
+    display: none;
+    margin: 1em;
     cursor: pointer;
+    position: absolute;
+    right: 0em;
+    top: 50%;
   }
-  main .slider .left-arrow {
+  main .slider .pc-slide .left-arrow {
     height: 2em;
-    display: block;
-    position: sticky;
-    top: 45%;
+    display: none;
+    margin: 1em;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
     transform: rotate(180deg);
     left: 0;
-    cursor: pointer;
-    overflow: visible;
+  }
+  main .slider .pc-slide {
+    min-width: 100%;
+    margin: 0 1em;
+    height: 100%;
   }
   main .dot-container {
     display: none;

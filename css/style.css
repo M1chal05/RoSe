@@ -1,8 +1,13 @@
+body {
+  overflow-x: hidden;
+}
+
 main {
   max-width: 100vw;
 }
 main h1 {
-  margin: 1em auto;
+  margin: 0.5em auto;
+  margin-top: 0;
   font-size: 57px;
   line-height: 1.2;
   max-width: 85%;
@@ -24,7 +29,7 @@ main button {
   width: 90%;
   height: 4em;
   border-radius: 4em;
-  margin: 3em auto;
+  margin: 2em auto;
 }
 main button a {
   color: black;
@@ -155,15 +160,25 @@ main button a {
   cursor: pointer;
 }
 
-.BeeCookie-text {
-  font-family: "Labil";
-}
-
 @media only screen and (min-width: 1000px) {
+  main {
+    margin: 0 5em;
+  }
+  main h1 {
+    max-width: 8em;
+    font-size: 80px;
+    margin: 0.25em 0;
+  }
   main h2 {
-    max-width: 22em;
-    font-size: 40px;
-    margin-top: 0;
+    font-size: 30px;
+    margin: 1.5em 0;
+  }
+  main button {
+    margin: 0;
+    max-width: 25em;
+  }
+  main button a {
+    font-size: 30px;
   }
   .popup .popup-header {
     justify-content: flex-end;

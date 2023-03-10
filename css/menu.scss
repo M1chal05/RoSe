@@ -24,7 +24,7 @@ header{
     top: 0;
     z-index: 1000;
     background: #fff;
-
+    
 //LANGUAGE SELECTOR
     .lang-slct-btn{
         color: #000;
@@ -190,9 +190,40 @@ header{
 //MEDIA
 
 @media only screen and (min-width: 1000px){
+
+    //OPEN/CLOSE MENU ANIMATIONS
+@keyframes openMenu {
+    0%{
+    width: 0;
+    height: 100vh;
+    }
+    100%{
+    display: block;
+    width: 30vw;
+    height: 100vh;
+    }   
+}
+
+@keyframes closeMenu {
+    0%{
+    display: block;
+    width: 30vw;
+    height: 100vh;
+    right: 0;
+    }
+    100%{
+    width: 0;
+    height: 100vh;
+    background: #E4D200;
+    z-index: 1000;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+    }
+}
     
     header{
-        justify-content: flex-end;
+        justify-content: space-between;
     
         .language-select{
             margin-right: 0;
@@ -206,7 +237,7 @@ header{
         justify-content: flex-end;
 
         .language-select{
-            margin-right: 0;
+            margin-right: 1em;
         }
         .close-menu-btn{
             margin-left: 0;

@@ -163,8 +163,36 @@ header .language-select:active .lng-slct-content {
   }
 }
 @media only screen and (min-width: 1000px) {
+  @keyframes openMenu {
+    0% {
+      width: 0;
+      height: 100vh;
+    }
+    100% {
+      display: block;
+      width: 30vw;
+      height: 100vh;
+    }
+  }
+  @keyframes closeMenu {
+    0% {
+      display: block;
+      width: 30vw;
+      height: 100vh;
+      right: 0;
+    }
+    100% {
+      width: 0;
+      height: 100vh;
+      background: #E4D200;
+      z-index: 1000;
+      position: absolute;
+      right: 0;
+      overflow: hidden;
+    }
+  }
   header {
-    justify-content: flex-end;
+    justify-content: space-between;
   }
   header .language-select {
     margin-right: 0;
@@ -176,7 +204,7 @@ header .language-select:active .lng-slct-content {
     justify-content: flex-end;
   }
   .menu .menu-header .language-select {
-    margin-right: 0;
+    margin-right: 1em;
   }
   .menu .menu-header .close-menu-btn {
     margin-left: 0;

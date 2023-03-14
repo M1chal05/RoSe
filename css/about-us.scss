@@ -1,11 +1,6 @@
 //VARIALBES
-$h2-pc: 40px;
-$text-pc: 20px;
-$a-small-pc: 20px;
-
-$h2-mobile: 26px;
-$text-mobile: 20px;
-$a-small-mobile: 20px;
+$textPc: 30px;
+$textMobile: 20px;
 
 body{
     max-width: 100%;
@@ -20,7 +15,7 @@ main{
         text-align: left;
         max-width: 85%;
         margin: 0 auto 2em auto;
-        font-size: $text-mobile;
+        font-size: $textMobile;
         line-height: 1.2;
         font-family: 'Stabil';
         font-weight: 500;
@@ -96,7 +91,7 @@ main{
 
     .slider .slide img{
         max-width: 85%;
-        max-height: 100%;
+        max-height: 35em;
         border-radius: 2em;
         margin: 1em;
     }
@@ -104,7 +99,7 @@ main{
 
     .slider .slide h3{
         text-align: center;
-        font-size: $a-small-mobile;
+        font-size: $textMobile;
         margin: 2em 0;
     }
 
@@ -124,7 +119,7 @@ main{
         max-width: 10em;
         padding: 0.5em;
         margin-bottom: 1em;
-        font-size: $a-small-mobile;
+        font-size: $textPc;
         line-height: 1.2;
     }
 
@@ -136,7 +131,7 @@ main{
         text-align: center;
         padding: 0.75em 1em;
         border-radius: 10em;
-        font-size: $a-small-mobile;
+        font-size: $textMobile;
     }    
 }
 
@@ -147,7 +142,7 @@ main{
     main h2{
         margin-bottom: 1em;
         max-width: 90%;
-        font-size: $h2-pc;
+        font-size: $textPc;
         line-height: 1.2;
 
         br{
@@ -172,7 +167,7 @@ main{
     }
     main .slider .slide h3{
         margin-top: 0.5em;
-        font-size: $text-pc;
+        font-size: $textMobile;
     }
     main .slider .slide a img{
         width: auto;
@@ -210,7 +205,7 @@ main{
     }
 
     main .slider .slide .job-offer h3{
-        font-size: $h2-pc;
+        font-size: 40px;
     }
 }
 

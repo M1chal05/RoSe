@@ -1,16 +1,17 @@
 //VARIALBES
-$h2-pc: 40px;
-$text-pc: 20px;
-$a-small-pc: 20px;
-
-$h2-mobile: 26px;
-$text-mobile: 15px;
-$a-small-mobile: 20px;
+$textMobile: 20px;
+$textPc: 30px;
 
 main h2{
     max-width: 85%;
     margin: 0 auto;
-    font-size: $h2-mobile;
+    font-size: $textMobile;
+    font-family: 'Stabil';
+    font-weight: 500;
+
+    span{
+        font-family: 'Labil';
+    }
 }
 
 //MEDIA
@@ -19,6 +20,6 @@ main h2{
     main h2{
         max-width: 60%;
         margin: 0 2em;
-        font-size: $h2-pc;
+        font-size: $textPc;
     }
 }

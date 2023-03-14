@@ -1,13 +1,18 @@
 main h2 {
   max-width: 85%;
   margin: 0 auto;
-  font-size: 26px;
+  font-size: 20px;
+  font-family: "Stabil";
+  font-weight: 500;
+}
+main h2 span {
+  font-family: "Labil";
 }
 
 @media only screen and (min-width: 1000px) {
   main h2 {
     max-width: 60%;
     margin: 0 2em;
-    font-size: 40px;
+    font-size: 30px;
   }
 }/*# sourceMappingURL=for-lectors.css.map */

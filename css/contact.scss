@@ -1,14 +1,17 @@
 //VARIALBES
-$h2-pc: 40px;
-$text-pc: 20px;
-$a-small-pc: 20px;
-
-$h2-mobile: 26px;
-$text-mobile: 20px;
-$a-small-mobile: 20px;
+$textPc: 30px;
+$textMobile: 20px;
 
 body{
     overflow-x: hidden;
+    height: 100vh;
+}
+
+.cont{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 main .slider .right-arrow{
@@ -23,7 +26,7 @@ main{
     h2{
         max-width: 85%;
         margin: 0 auto 1em auto;
-        font-size: $text-mobile;
+        font-size: $textMobile;
         font-family: 'Stabil';
         font-weight: 500;
         color: black;
@@ -75,7 +78,7 @@ main{
 
     .slider .slide img{
         max-width: 85%;
-        max-height: 100%;
+        max-height: 35em;
         border-radius: 2em;
         margin: 1em;
     }
@@ -104,7 +107,19 @@ main{
     margin: 0 0.25em;
 }
 
+footer{
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    display: none;
 
+    p{
+        font-family: 'Stabil';
+        font-weight: 500;
+        font-size: 10px;
+    }
+}
 
 
 //POPUP
@@ -129,7 +144,7 @@ main{
         max-width: 13ch;
         text-align: center;
         margin-bottom: 1em;
-        font-size: $h2-mobile;
+        font-size: $textPc;
     }
     
     .popup .full-width{
@@ -144,7 +159,7 @@ main{
     }
     
     .popup form input{
-        font-size: $h2-mobile;
+        font-size: $textMobile;
         background: none;
         outline: none;
         border: none;
@@ -162,7 +177,7 @@ main{
         height: 3em;
         border: none;
         border-radius: 4em;
-        font-size: $a-small-mobile;
+        font-size: $textMobile;
         cursor: pointer;
     }
     
@@ -224,8 +239,8 @@ main{
         outline: none;
         border: none;
         margin: 2em 0;
-        font-size: $a-small-mobile;
-        text-decoration: underline;
+        font-size: $textMobile;
+        text-decoration: none;
         cursor: pointer;
     }
 
@@ -277,16 +292,6 @@ main{
         margin: 0 auto;
         overflow: scroll;
         scroll-behavior: smooth;
-        height: 100%;
-    }
-    main .slider .slide h3{
-        margin-top: 0.5em;
-        font-size: $text-pc;
-    }
-    main .slider .slide a img{
-        width: auto;
-        max-width: 100%;
-        max-height: 100%;
     }
     main .slider .pc-slide .right-arrow{
         height: 2em;
@@ -333,7 +338,7 @@ main{
     }
     main .contact-info p{
         width: 50%;
-        font-size: $text-pc;
+        font-size: $textPc;
     }
     
     main .bottom-cont{
@@ -342,6 +347,10 @@ main{
         width: 100%;
     }
 
+    footer{
+        padding: 2em 3em;
+        display: flex;
+    }
 
     //POPUP
     .popup .popup-header{
@@ -354,14 +363,14 @@ main{
 
     .popup h2{
         max-width: 25ch;
-        font-size: $h2-pc;
+        font-size: $textPc;
     }
 
     .popup form input{
-        font-size: $h2-pc;
+        font-size: $textPc;
     }
 
     .popup .close-popup-btn{
-        font-size: $a-small-pc;
+        font-size: $textPc;
     }
 }

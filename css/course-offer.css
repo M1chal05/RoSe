@@ -29,7 +29,7 @@ main .lang-card {
   border-radius: 2em;
 }
 main .lang-card h3 {
-  font-size: 26px;
+  font-size: 30px;
 }
 main .german {
   background: #E4D200;
@@ -65,7 +65,7 @@ main .prepared {
     display: none;
   }
   main h2 {
-    font-size: 40px;
+    font-size: 30px;
     line-height: 1.2;
   }
   main .container {

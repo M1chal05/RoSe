@@ -55,8 +55,8 @@ window.addEventListener("load", jobOffRes)
 window.onresize = jobOffRes
 
 function jobOffRes(){
-    let obrH = document.querySelector(".obr").height
-    let obrW = document.querySelector(".obr").width
+    obrH = document.querySelector(".obr").clientHeight
+    obrW = document.querySelector(".obr").clientWidth
 
 jobOffer.style.width = obrW + "px"
 jobOffer.style.height = obrH + "px"
@@ -69,6 +69,10 @@ jobOffer.style.height = obrH + "px"
 let maxScrollLeft = slider.scrollWidth - slider.clientWidth
 Larrow1.style.display = "none"
 Larrow2.style.display = "none"
+
+window.addEventListener("resize", function(){
+    maxScrollLeft = slider.scrollWidth - slider.clientWidth
+})
 
 slider.addEventListener("scroll", function(){
 

@@ -21,12 +21,12 @@ main .payment-container p span {
     margin-left: 5%;
   }
   main h2 {
-    font-size: 40px;
+    font-size: 30px;
   }
   main h3 {
-    font-size: 40px;
+    font-size: 30px;
   }
-  main p {
-    font-size: 20px;
+  main .payment-container p {
+    font-size: 30px;
   }
 }/*# sourceMappingURL=payment.css.map */

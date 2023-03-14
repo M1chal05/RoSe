@@ -1,15 +1,11 @@
 //VARIALBES
-$h2-pc: 40px;
-$text-pc: 20px;
-$a-small-pc: 20px;
-
-$h2-mobile: 26px;
-$text-mobile: 20px;
-$a-small-mobile: 20px;
+$textPc: 30px;
+$textMobile: 20px;
 
 body{
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 .close{
@@ -42,13 +38,13 @@ body{
     }
 
     h3{
-        font-size: $text-mobile;
+        font-size: $textMobile;
         margin: 1em 0;
     }
 
     p{
         font-family: 'Stabil';
-        font-size: $text-mobile;
+        font-size: $textMobile;
         font-weight: 500;
     }
 }
@@ -60,18 +56,20 @@ body{
 @media only screen and (min-width: 1000px){
     .container{
         flex-direction: row;
+        align-items: flex-start;
         gap: 10em;
-        padding: 5em;
+        padding: 4em;
     }
     .container img{
-        height: 110%;
+        height: 100%;
         width: auto;
+
     }
     .container h3{
-        font-size: $h2-pc;
+        font-size: 40px;
     }
     .container p{
-        font-size: $text-pc;
+        font-size: $textPc;
         max-width: 30ch;
     }
 }

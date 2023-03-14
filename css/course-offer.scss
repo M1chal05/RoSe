@@ -1,11 +1,6 @@
 //VARIALBES
-$h2-pc: 40px;
-$text-pc: 20px;
-$a-small-pc: 20px;
-
-$h2-mobile: 26px;
-$text-mobile: 20px;
-$a-small-mobile: 20px;
+$textPc: 30px;
+$textMobile: 20px;
 
 body{
     overflow-x: hidden;
@@ -15,7 +10,7 @@ main{
     h2{
         max-width: 90%;
         margin: 0 auto 3em auto;
-        font-size: $text-mobile;
+        font-size: $textMobile;
         line-height: 1.2;
         font-family: 'Stabil';
         font-weight: 500;
@@ -43,7 +38,7 @@ main{
     }
 
     .lang-card h3{
-        font-size: $h2-mobile;
+        font-size: $textPc;
 
     }
 
@@ -94,7 +89,7 @@ main{
         display: none;
     }
     main h2{
-        font-size: $h2-pc;
+        font-size: $textPc;
         line-height: 1.2;
     }
     main .container{
@@ -122,10 +117,10 @@ main{
         margin: 1em auto;
     }
     main .lang-container .lang-card h3{
-        font-size: $h2-pc;
+        font-size: 40px;
     }
     main .lang-card h3{
-        font-size: $h2-pc;
+        font-size: 40px;
     }
 
     main .prepared-container{

@@ -1,11 +1,6 @@
 //VARIALBES
-$h2-pc: 40px;
-$text-pc: 20px;
-$a-small-pc: 20px;
-
-$h2-mobile: 26px;
-$text-mobile: 20px;
-$a-small-mobile: 20px;
+$textPc: 30px;
+$textMobile: 20px;
 
 main{
 
@@ -18,7 +13,7 @@ main{
 
         p{
             font-family: 'Stabil';
-            font-size: $text-mobile;
+            font-size: $textMobile;
             font-weight: 500;
     
             span{
@@ -37,12 +32,12 @@ main{
         margin-left: 5%;
     }
     main h2{
-        font-size: $h2-pc;
+        font-size: $textPc;
     }
     main h3{
-        font-size: $h2-pc;
+        font-size: $textPc;
     }
-    main p{
-        font-size: $text-pc;
+    main .payment-container p{
+        font-size: $textPc;
     }
 }
